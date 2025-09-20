@@ -4,6 +4,7 @@ namespace caso2net.Services;
 
 public interface IComunicacionService
 {
+
     Task<ComunicacionDto?> GetComunicacionAsync(int id);
     Task<IEnumerable<ComunicacionDto>> GetComunicacionesAsync();
     Task<IEnumerable<ComunicacionDto>> GetComunicacionesByProyectoAsync(int proyectoId);
@@ -11,4 +12,5 @@ public interface IComunicacionService
     Task<ComunicacionDto> CreateComunicacionAsync(CreateComunicacionDto dto);
     Task<ComunicacionDto> UpdateComunicacionAsync(int id, UpdateComunicacionDto dto);
     Task DeleteComunicacionAsync(int id);
+    
 }
